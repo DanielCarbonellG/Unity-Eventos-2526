@@ -68,7 +68,7 @@ public class ShieldCollector : MonoBehaviour
         }
 
         textoRecompensa.gameObject.SetActive(true);
-        textoRecompensa.text = "🎉 ¡Recompensa obtenida! 🎁";
+        textoRecompensa.text = "¡Recompensa obtenida!";
 
         CancelInvoke(nameof(OcultarRecompensa)); // evitar múltiples invokes solapados
         Invoke(nameof(OcultarRecompensa), duracionRecompensa);
@@ -80,3 +80,4 @@ public class ShieldCollector : MonoBehaviour
             textoRecompensa.gameObject.SetActive(false);
     }
 }
+
